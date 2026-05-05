@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reservation | Fresh Rebel</title>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<meta content="Reserve a table at Fresh Rebel for lunch, dinner or dessert." name="description"/></head>
+<body>
+<header class="topbar">
+<div class="wrap top-in">
+<a class="brand" href="index.html">
+<span class="brand-icon">FR</span>
+<span>Fresh Rebel</span>
+</a>
+<nav class="side-nav" id="site-menu">
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="food-details.html">Signature Dish</a>
+<a href="offers.html">Offers</a>
+<a href="reservation.html">Reservation</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="top-actions">
+<a class="icon-link account-link login-link" href="login.html"><span class="txt">Login</span></a>
+<a class="icon-link account-link signup-link" href="signup.html"><span class="txt">Sign Up</span></a>
+<a class="icon-link cart-link" href="cart.html"><span class="txt">Cart</span> <span class="cart-num" data-cart-count="">0</span></a>
+<button class="mini-btn theme-btn" data-theme-toggle="" type="button"><span data-theme-icon="">🌙</span><span class="txt" data-mood-label="">Night</span></button>
+<button class="mini-btn" data-menu-toggle="" type="button">
+<span class="lines"><span></span><span></span><span></span></span>
+<span class="btn-txt">Explore</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<section class="page-head">
+<div class="wrap">
+<p class="kicker">Plan your visit</p>
+<h1>Reservation</h1>
+<p>Plan your visit for a quick lunch, a small group or a late dessert stop.</p>
+</div>
+</section>
+<section class="area">
+<div class="wrap split">
+<article class="box">
+<h3>Reserve Table</h3>
+<form class="form-box" data-fresh-form="" data-success="Table reserved successfully." novalidate="">
+<div class="input-box wide">
+<label>Name</label>
+<input data-required="true" name="name" placeholder="Your name"/>
+<span class="err">Name is required.</span>
+</div>
+<div class="input-box">
+<label>Number of People</label>
+<input data-min="1" data-required="true" min="1" name="people" placeholder="2" type="number"/>
+<span class="err">Choose at least 1 person.</span>
+</div>
+<div class="input-box">
+<label>Phone</label>
+<input data-required="true" data-type="phone" name="phone" placeholder="0100 250 4040"/>
+<span class="err">Enter a valid phone.</span>
+</div>
+<div class="input-box">
+<label>Date</label>
+<input data-date-not-past="" data-required="true" name="date" type="date"/>
+<span class="err">Old dates are not allowed.</span>
+</div>
+<div class="input-box">
+<label>Time</label>
+<input data-required="true" name="time" type="time"/>
+<span class="err">Choose a time.</span>
+</div>
+<button class="btn" type="submit">Reserve Now</button>
+</form>
+<p class="msg" data-form-message=""></p>
+</article>
+<aside class="box">
+<span class="label">Table Notes</span>
+<h3>Good to know</h3>
+<p>We hold tables for 15 minutes. For more than 8 guests, message us on WhatsApp: 0100 250 4040 before booking.</p>
+<p>Fridays fill up fastest, especially after 7 PM.</p>
+</aside>
+</div>
+</section>
+</main>
+<footer class="foot">
+<div class="wrap foot-in">
+<section>
+<a class="brand" href="index.html">
+<span class="brand-icon">FR</span>
+<span>Fresh Rebel</span>
+</a>
+</section>
+<section>
+<h4>Explore</h4>
+<a href="menu.html">Menu</a>
+<a href="food-details.html">Signature Dish</a>
+<a href="offers.html">Offers</a>
+<a href="reservation.html">Reservation</a>
+</section>
+<section>
+<h4>Contact</h4>
+<a href="https://wa.me/201002504040">WhatsApp: 0100 250 4040</a>
+<a href="tel:+201224504040">Calls: 0122 450 4040</a>
+<a href="mailto:orders@freshrebel.com">orders@freshrebel.com</a>
+<a href="contact.html">18 Talaat Harb St, Downtown Cairo</a>
+</section>
+</div>
+<div class="wrap copy">
+<p>Fresh daily. Real flavor.</p>
+<p>Made for quick lunch, pickup and easy orders.</p>
+</div>
+
+<div class="pop" data-modal="">
+<div class="pop-box">
+<h2 class="sec-title receipt-title">Receipt</h2>
+<div data-receipt=""></div>
+<template id="receipt-line-template">
+<p><strong data-receipt-name=""></strong> x <span data-receipt-qty=""></span> = <span data-receipt-line-total=""></span></p>
+</template>
+<template id="receipt-total-template">
+<hr/>
+<p><strong>Total:</strong> <span data-receipt-total=""></span></p>
+</template>
+<button class="btn" data-close-modal="" type="button">Close</button>
+</div>
+</div>
+<div class="toast" data-shop-toast=""></div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

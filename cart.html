@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cart | Fresh Rebel</title>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<meta content="Review your Fresh Rebel order, update quantities and checkout." name="description"/></head>
+<body>
+<header class="topbar">
+<div class="wrap top-in">
+<a class="brand" href="index.html">
+<span class="brand-icon">FR</span>
+<span>Fresh Rebel</span>
+</a>
+<nav class="side-nav" id="site-menu">
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="food-details.html">Signature Dish</a>
+<a href="offers.html">Offers</a>
+<a href="reservation.html">Reservation</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="top-actions">
+<a class="icon-link account-link login-link" href="login.html"><span class="txt">Login</span></a>
+<a class="icon-link account-link signup-link" href="signup.html"><span class="txt">Sign Up</span></a>
+<a class="icon-link cart-link" href="cart.html"><span class="txt">Cart</span> <span class="cart-num" data-cart-count="">0</span></a>
+<button class="mini-btn theme-btn" data-theme-toggle="" type="button"><span data-theme-icon="">🌙</span><span class="txt" data-mood-label="">Night</span></button>
+<button class="mini-btn" data-menu-toggle="" type="button">
+<span class="lines"><span></span><span></span><span></span></span>
+<span class="btn-txt">Explore</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<section class="page-head">
+<div class="wrap">
+<p class="kicker">Your order</p>
+<h1>Cart</h1>
+<p>Review your order and adjust quantities before checkout.</p>
+</div>
+</section>
+<section class="area">
+<div class="wrap">
+<p class="msg" data-shop-empty="">Your cart is empty. Pick something from the menu and it will show up here.</p>
+<div class="table-box">
+<table class="cart-table">
+<thead>
+<tr>
+<th>Item</th>
+<th>Price</th>
+<th>Qty</th>
+<th>Total</th>
+<th>Remove</th>
+</tr>
+</thead>
+<tbody data-shop-items=""></tbody>
+<template id="cart-row-template">
+<tr>
+<td data-cart-item-name=""></td>
+<td data-cart-item-price=""></td>
+<td>
+<span class="qty">
+<button data-cart-minus="" type="button">-</button>
+<strong data-cart-item-qty=""></strong>
+<button data-cart-plus="" type="button">+</button>
+</span>
+</td>
+<td data-cart-item-total=""></td>
+<td>
+<button class="mini-btn" data-cart-remove="" type="button">Remove</button>
+</td>
+</tr>
+</template>
+<tfoot>
+<tr>
+<td colspan="3">Grand Total</td>
+<td colspan="2" data-shop-total="">0 EGP</td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div class="hero-btns cart-actions">
+<button class="btn" data-shop-checkout="" type="button">Checkout</button>
+<button class="btn light" data-clear-cart="" type="button">Clear Cart</button>
+<a class="btn green" href="menu.html">Back to Menu</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="foot">
+<div class="wrap foot-in">
+<section>
+<a class="brand" href="index.html">
+<span class="brand-icon">FR</span>
+<span>Fresh Rebel</span>
+</a>
+</section>
+<section>
+<h4>Explore</h4>
+<a href="menu.html">Menu</a>
+<a href="food-details.html">Signature Dish</a>
+<a href="offers.html">Offers</a>
+<a href="reservation.html">Reservation</a>
+</section>
+<section>
+<h4>Contact</h4>
+<a href="https://wa.me/201002504040">WhatsApp: 0100 250 4040</a>
+<a href="tel:+201224504040">Calls: 0122 450 4040</a>
+<a href="mailto:orders@freshrebel.com">orders@freshrebel.com</a>
+<a href="contact.html">18 Talaat Harb St, Downtown Cairo</a>
+</section>
+</div>
+<div class="wrap copy">
+<p>Fresh daily. Real flavor.</p>
+<p>Made for quick lunch, pickup and easy orders.</p>
+</div>
+
+<div class="pop" data-modal="">
+<div class="pop-box">
+<h2 class="sec-title receipt-title">Receipt</h2>
+<div data-receipt=""></div>
+<template id="receipt-line-template">
+<p><strong data-receipt-name=""></strong> x <span data-receipt-qty=""></span> = <span data-receipt-line-total=""></span></p>
+</template>
+<template id="receipt-total-template">
+<hr/>
+<p><strong>Total:</strong> <span data-receipt-total=""></span></p>
+</template>
+<button class="btn" data-close-modal="" type="button">Close</button>
+</div>
+</div>
+<div class="toast" data-shop-toast=""></div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
